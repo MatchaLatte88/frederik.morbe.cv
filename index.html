@@ -146,6 +146,20 @@ html.dark .dark-toggle:hover { border-color: #c4652a; color: #c4652a; }
 html.dark .dark-toggle .icon-moon { display: none; }
 html.dark .dark-toggle .icon-sun { display: block; }
 
+/* Dark mode: hero section */
+html.dark .hero-name .word-inner { color: #faf8f5; }
+html.dark .hero-description { color: #9a9a9a; }
+html.dark .hero-subtitle { color: #c4652a; }
+html.dark .hero-label-text { color: #c4652a; }
+html.dark .hero-label-line { background: #c4652a; }
+html.dark .btn-outline-mag { color: #faf8f5; border-color: #2a2a2a; }
+html.dark .btn-outline-mag:hover { border-color: #c4652a; }
+html.dark .hero-photo-frame { background: #1f1f1f; border-color: #2a2a2a; }
+html.dark .hero-photo-deco { border-color: #2a2a2a; }
+html.dark .hero-bg-blob { opacity: 0.08; }
+html.dark .scroll-indicator-text { color: #5a5a5a; }
+html.dark .scroll-indicator-line { background: #2a2a2a; }
+
 /* Dark mode: experience & contact switch to dark */
 html.dark .experience-section {
   background: #1a1a1a;
@@ -495,38 +509,6 @@ html.dark .modal-close:hover { border-color: #c4652a; }
 @keyframes decoFloat2 {
   0%, 100% { transform: translate(0, 0); }
   50% { transform: translate(-4px, 4px); }
-}
-
-/* Status badge */
-.hero-status {
-  position: absolute;
-  bottom: 2rem; right: -2rem;
-  display: flex; align-items: center; gap: 0.5rem;
-  padding: 0.75rem 1.25rem;
-  background: #faf8f5;
-  border: 1.5px solid #d4d0cc;
-  border-radius: 100px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
-  animation: statusPulse 3s ease-in-out infinite;
-}
-@keyframes statusPulse {
-  0%, 100% { box-shadow: 0 8px 32px rgba(0,0,0,0.06); }
-  50% { box-shadow: 0 8px 48px rgba(196,101,42,0.12); }
-}
-.status-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: #22c55e;
-  box-shadow: 0 0 0 3px rgba(34,197,94,0.2);
-  animation: dotPulse 2s ease-in-out infinite;
-}
-@keyframes dotPulse {
-  0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
-  50% { box-shadow: 0 0 0 6px rgba(34,197,94,0.1); }
-}
-.status-text {
-  font-size: 12px; font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 
 /* Scroll indicator */
@@ -1335,7 +1317,6 @@ html.dark .modal-close:hover { border-color: #c4652a; }
    ============================================================ */
 @media (max-width: 768px) {
   .hero { padding: 5rem 0 4rem; }
-  .hero-status { display: none; }
   .scroll-indicator { display: none; }
   section { padding-top: 4rem; padding-bottom: 4rem; }
   .bento-grid { grid-template-columns: 1fr !important; }
@@ -1439,10 +1420,6 @@ html.dark .modal-close:hover { border-color: #c4652a; }
           </div>
           <div class="hero-photo-deco hero-photo-deco-1" aria-hidden="true"></div>
           <div class="hero-photo-deco hero-photo-deco-2" aria-hidden="true"></div>
-          <div class="hero-status">
-            <span class="status-dot"></span>
-            <span class="status-text">Available</span>
-          </div>
         </div>
       </div>
     </div>
